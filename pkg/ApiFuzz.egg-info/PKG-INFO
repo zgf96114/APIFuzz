@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ApiFuzz
+Version: 1.0.0
+Summary: API fuzzing test framework
+Author: Gazhou
+Author-email: gaofeng.zhou2@harman.com
+License: GPL v3.0
+Project-URL: Documentation, https://packaging.python.org/
+Project-URL: Source, https://github.com/
+Requires-Python: >=3.8.0
+Requires-Dist: frida
+Requires-Dist: frida-tools
