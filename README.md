@@ -17,7 +17,9 @@ Introduction of some files and directories
 ### STEP 1:  Prepare for the Environment
 
 install the fuzz demo app in android device(real machine or android simulator)
+
 install adb sdk tool on your test PC
+
 install python3 env in your PC.
 
 ### STEP 2:  Build APIFuzz wheel package and install it.
