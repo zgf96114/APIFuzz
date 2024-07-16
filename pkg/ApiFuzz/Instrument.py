@@ -54,14 +54,14 @@ class fuzzer(object):
         if message['type'] == 'send':
             payload = message['payload']
             # print("Payload is : ",payload)
-            if 'java.lang.Exception' in payload:
-                with open("script_trace.txt", "a") as f:
-                    f.write(payload + "\n")
+            # if 'java.lang.Exception' in payload:
+            #     with open("script_trace.txt", "a") as f:
+            #         f.write(payload + "\n")
         #self.script.post({"my_data": "800:300"})
-        if self.fuzzdata:
+        if (self.fuzzdata and self.fuzz_start_flag ==2):
             print("Send fuzzing data to target-->:", self.fuzzdata)
             self.script.post({"my_data": self.fuzzdata})
-            self.fuzz_start_flag = 1
+        self.fuzz_start_flag = 1
 
     def start_fuzzing_test(self, *args):
         self.attach()

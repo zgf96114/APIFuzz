@@ -12,8 +12,8 @@ ui_dev = u2.connect(deviceid) #initilize and connect to uiautomator
 ui_dev.implicitly_wait(20)
 print("Connected uiautomator2")
 
-para1 = Mutators.mutator_int(1,-10,10) #create generator object for test Parameter 1
-para2 = Mutators.mutator_int(1,-10,10) #create generator object for test Parameter 2
+para1 = Mutators.mutator_int(1, -30, 30) #create generator object for test Parameter 1
+para2 = Mutators.mutator_int(1, -30, 30) #create generator object for test Parameter 2
 
 instrumentation = fuzz(deviceid, APP_PACKAGE_NAME, SCRIPT_FILES) #create App Fuzzer object
 

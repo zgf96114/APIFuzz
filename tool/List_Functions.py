@@ -4,7 +4,7 @@ rdev = frida.get_device("127.0.0.1:62001", timeout=4)
 def on_message(message, data):
     print("[on_message] message:", message, "data:", data)
 
-session = rdev.attach("demo")
+session = rdev.attach("API_Fuzz_Demo")
 script = session.create_script("""
 rpc.exports.enumerateModules = function () {
   return Process.enumerateModules();

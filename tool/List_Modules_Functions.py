@@ -8,7 +8,7 @@ def on_message(message, data):
     #    print(f.name)
     #    print(f.address)
 
-session = rdev.attach("demo")
+session = rdev.attach("API_Fuzz_Demo")
 script = session.create_script("""
 Java.perform(function () {
         console.log("%----Applications with following modules and functions----%");
