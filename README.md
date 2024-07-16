@@ -39,8 +39,8 @@ pip install ApiFuzz-1.0.0-py3-none-any.whl
 ### STEP 3: Run the demo fuzzing test
 
 open a command shell
-Run:
 
+Run:
 ```
 cd sample
 python Api_Fuzzing_01.py # running a android api fuzzing
