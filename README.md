@@ -47,3 +47,8 @@ python Api_Fuzzing_01.py # running a android api fuzzing
 python Api_Fuzzing_02.py # running a native api fuzzing
 
 ```
+
+## Issue/Bug fix
+
+Author: Jack Zhou
+email: zgf96114@163.com
